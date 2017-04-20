@@ -1,0 +1,7 @@
+<launch>
+  <node name="masked_image" pkg="masked_image" type="masked_image">
+    <param name="mask_image_file" value="$(find masked_image)/example_mask/mask.jpg"/>
+    <remap from="image_raw" to="/webcam/image_raw"/>
+  </node>
+
+</launch>
